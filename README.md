@@ -1,8 +1,11 @@
 # INRIA_Find-Phone
+
 ## Dependencias:
 Python 3.9.5
 ### Instalar las dependencias:
 pip install -r requirements.txt
+### Clona el repositorio de YOLOv5
+git clone https://github.com/ultralytics/yolov5.git
 
 ## Pasos para entrenar el modelo:
 Colocar el archivo labels.txt y las imágenes en una carpeta (por ejemplo, ~/find_phone_data).
