@@ -65,7 +65,7 @@ def train_yolo(data_dir):
         'python', os.path.join(yolov5_dir, 'train.py'),
         '--img', '640',  # Tamaño de la imagen
         '--batch', '16',  # Tamaño del batch
-        '--epochs', '10',  # Número de épocas
+        '--epochs', '50',  # Número de épocas
         '--data', 'data.yaml',  # Ruta al archivo data.yaml
         '--cfg', os.path.join(yolov5_dir, 'models', 'yolov5s.yaml'),  # Ruta al archivo de configuración del modelo
         '--weights', 'yolov5s',  # Modelo preentrenado
