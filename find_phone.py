@@ -4,7 +4,7 @@ from PIL import Image
 
 # Cargar el modelo YOLOv5 entrenado
 def find_phone(image_path):
-    model = torch.hub.load('ultralytics/yolov5', 'custom', path='best.pt', source='local')
+    model = torch.hub.load('yolov5', 'custom', path='find_phone_data/finetuned/weights/best.pt', source='local')
 
     # Realizar la inferencia en la imagen proporcionada
     results = model(image_path)
@@ -38,4 +38,3 @@ if __name__ == '__main__':
     
     image_path = sys.argv[1]
     find_phone(image_path)
-    
